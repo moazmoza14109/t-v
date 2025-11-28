@@ -31,7 +31,7 @@ app.post("/generate-video", async (req, res) => {
     res.json({ video: base64 });
   } catch (error) {
     console.error("HF ERROR:", error.response?.data || error.message);
-    res.status(500).json({ error: "Video generation failed" });
+    res.status(500).json({ error: "Video generatio n failed" });
   }
 });
 
