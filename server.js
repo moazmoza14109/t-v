@@ -34,4 +34,9 @@ app.post("/generate-video", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
+
+
 app.listen(5000, () => console.log("🔥 Backend running on 5000"));
